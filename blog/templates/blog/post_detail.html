@@ -9,6 +9,9 @@
                 {{ post.published_date }}
             </time>
         {% endif %}
+        <a href="{% url 'order' %}" class="top-menu">
+            {% include './icons/bestellknopf.svg' %}
+        </a>
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
